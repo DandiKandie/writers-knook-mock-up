@@ -12,4 +12,6 @@ Now it is 2021, and I have learned a lot since 2020. And decided to revitalize t
 
 ### Before (the 2020 version)
 
+![](./Writers-Knook-before.png)
+
 ### After (the improved version.)
