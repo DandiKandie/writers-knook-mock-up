@@ -1,0 +1,104 @@
+:root {
+	--font-color: #fcf8f4;
+	--primary-color: #967c94;
+	--secondary-color: #cdc3c4;
+	--accent-color: #6f909d;
+}
+
+nav {
+	background-color: var(--secondary-color);
+	color: var(--font-color);
+	display: flex;
+	justify-content: space-between;
+}
+
+nav .primary-navigation {
+	display: flex;
+	list-style: none;
+}
+
+nav .primary-navigation li a {
+	display: inline-block;
+	padding: 0.9em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--font-color);
+	font-size: 1.2em;
+}
+
+nav .primary-navigation li a:hover {
+	border-bottom: 3px solid var(--accent-color);
+}
+
+nav .open-menu {
+	font-size: 1.7em;
+	margin: 1.25rem;
+	display: none;
+	cursor: pointer;
+}
+
+nav .primary-navigation .close-menu,
+.social-icons i {
+	font-size: 1.7em;
+	display: none;
+	cursor: pointer;
+}
+
+.fa-facebook:hover {
+	color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+	color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+	color: rgb(255, 0, 191);
+}
+
+.logo {
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-left: 1em;
+	align-self: center;
+}
+
+@media screen and (max-width: 50em) {
+	.logo {
+		display: grid;
+		place-items: center;
+	}
+
+	nav .primary-navigation {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--secondary-color);
+		transition: top 1s ease-in;
+		display: none;
+	}
+
+	nav .primary-navigation .close-menu {
+		font-size: 1.5em;
+		display: block;
+		position: absolute;
+		top: 0.3em;
+		right: 0.8em;
+	}
+
+	nav .open-menu {
+		display: block;
+	}
+
+	nav .primary-navigation li a:hover {
+		border-bottom: none;
+		background: none;
+		color: var(--accent-color);
+		font-size: 1.4em;
+	}
+}

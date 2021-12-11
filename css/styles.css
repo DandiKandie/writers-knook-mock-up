@@ -1,0 +1,21 @@
+/* Variables used */
+/* other possible colors
+#f2f6f2
+*/
+:root {
+	--font-color: #fcf8f4;
+	--primary-color: #967c94;
+	--secondary-color: #cdc3c4;
+	--accent-color: #6f909d;
+
+	/*Font weights*/
+	--thin: 200;
+	--regular: 300;
+	--thick: 500;
+
+	--main-font: 'Bitter', serif;
+}
+
+body {
+	font-family: var(--main-font);
+}
