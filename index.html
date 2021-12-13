@@ -12,9 +12,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;500&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;500&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- <link
+			href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;500&display=swap"
+			rel="stylesheet"
+		/> -->
 
 		<!-- My Stylesheets -->
 		<link rel="stylesheet" href="./css/reset.css" />
@@ -50,65 +54,78 @@
 		</nav>
 
 		<header class="primary-header">
-			<div class="container nav-container">
+			<div class="container container--header">
 				<div class="branding-header">
-					<h1>The <span class="highlight">Writing</span> Nook</h1>
+					<h1 class="main--header">The <span class="highlight">Writing</span> Nook</h1>
+				</div>
+				<div>
+					<img
+						class="header-image"
+						src="/imgs/homepage.jpg"
+						alt="image of a typewriter on a desk"
+					/>
 				</div>
 			</div>
 		</header>
 
 		<!-- Main Content  -->
+		<main>
+			<article class="main-showcase">
+				<section class="showcase">
+					<div class="container">
+						<h2>Professional Writing Services</h2>
+						<p>
+							The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus.
+							Enzymes secondary fermentation hoppy bright beer krausen; bock hop back wort
+							sparge. Ullam alias consequuntur incidunt reiciendis tenetur architecto, velit
+							aliquid ducimus?
+						</p>
+					</div>
+				</section>
+				<section class="newsletter">
+					<div class="container">
+						<h2>Subscribe to our newsletter!</h2>
+						<form action="#">
+							<input type="email" name="email" id="email" placeholder="Enter Email" />
+							<button type="submit" class="btn">Subscribe Here!</button>
+						</form>
+					</div>
+				</section>
+			</article>
 
-		<section class="main-showcase">
-			<div class="container">
-				<h1>Professional Writing Services</h1>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, corrupti. Labore
-					cupiditate reiciendis ad sapiente modi blanditiis doloremque dicta iste. Ullam alias
-					consequuntur incidunt reiciendis tenetur architecto, velit aliquid ducimus?
-				</p>
-			</div>
-		</section>
-		<section class="newsletter">
-			<div class="container">
-				<h1>Subscribe to our newsletter</h1>
-				<form action="#">
-					<input type="email" name="email" id="email" placeholder="Enter Email" />
-					<button type="submit" class="button-1">Subscribe Here!</button>
-				</form>
-			</div>
-		</section>
-		<section class="events">
-			<div class="container">
-				<div class="event">
-					<img src="/imgs/editing.jpg" alt="photo of editing" />
-					<h3>Editorial Services</h3>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia totam
-						dolorum quos pariatur eveniet in nihil recusandae quidem libero perferendis illo eum
-						saepe, vitae excepturi dignissimos labore dolorem?
-					</p>
+			<article class="events">
+				<div class="events-container">
+					<section class="event">
+						<img src="/imgs/editing.jpg" alt="photo of editing" />
+						<h2>Editorial Services</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia
+							totam dolorum quos pariatur eveniet in nihil recusandae quidem libero
+							perferendis illo eum saepe, vitae excepturi dignissimos labore dolorem?
+						</p>
+					</section>
+					<section class="event">
+						<img src="/imgs/workshop.jpg" alt="photo of workshop" />
+						<h2>Writer's Workshop</h2>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia
+							totam dolorum quos pariatur eveniet in nihil recusandae quidem libero
+							perferendis illo eum saepe, vitae excepturi dignissimos labore dolorem?
+						</p>
+					</section>
+					<section class="event">
+						<img class="event-3" src="/imgs/publishing2.jpg" alt="photo of magazines" />
+						<h2>Publishing Info</h2>
+						<p class="not-this-one">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia
+							totam dolorum quos pariatur eveniet in nihil recusandae quidem libero
+							perferendis illo eum saepe, vitae excepturi dignissimos labore dolorem?
+						</p>
+					</section>
 				</div>
-				<div class="event">
-					<img src="/imgs/workshop.jpg" alt="photo of workshop" />
-					<h3>Writer's Workshop</h3>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia totam
-						dolorum quos pariatur eveniet in nihil recusandae quidem libero perferendis illo eum
-						saepe, vitae excepturi dignissimos labore dolorem?
-					</p>
-				</div>
-				<div class="event">
-					<img class="event-3" src="/imgs/publishing.jpg" alt="photo of magazines" />
-					<h3>Publishing Info</h3>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim earum mollitia totam
-						dolorum quos pariatur eveniet in nihil recusandae quidem libero perferendis illo eum
-						saepe, vitae excepturi dignissimos labore dolorem?
-					</p>
-				</div>
-			</div>
-		</section>
+			</article>
+		</main>
+
 		<footer>
 			<p>The Writing Knook Copyright &copy;2020</p>
 		</footer>
