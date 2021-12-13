@@ -27,7 +27,8 @@ nav .primary-navigation li a {
 }
 
 nav .primary-navigation li a:hover {
-	color: var(--accent-color);
+	font-weight: var(--thick);
+	color: #000;
 }
 
 nav .open-menu {
@@ -98,7 +99,7 @@ nav .primary-navigation .close-menu,
 	nav .primary-navigation li a:hover {
 		border-bottom: none;
 		background: none;
-		color: var(--accent-color);
+		color: #000;
 		font-size: 1.4em;
 	}
 }
