@@ -27,7 +27,7 @@ nav .primary-navigation li a {
 }
 
 nav .primary-navigation li a:hover {
-	border-bottom: 3px solid var(--accent-color);
+	color: var(--accent-color);
 }
 
 nav .open-menu {

@@ -1,11 +1,12 @@
 /* Variables used */
 /* other possible colors
+--main-font: 'Bitter', serif;
 #f2f6f2
 */
 :root {
 	--font-color: #fcf8f4;
-	--primary-color: #967c94;
-	--secondary-color: #cdc3c4;
+	--primary-color: #cdc3c4;
+	--secondary-color: #967c94;
 	--accent-color: #6f909d;
 
 	/*Font weights*/
@@ -13,9 +14,141 @@
 	--regular: 300;
 	--thick: 500;
 
-	--main-font: 'Bitter', serif;
+	--main-font: 'Assistant', sans-serif;
 }
+/* Global styles */
 
 body {
 	font-family: var(--main-font);
+	font-weight: var(--thin);
+	background-color: var(--font-color);
+}
+
+.btn {
+	height: 2.4rem;
+	background-color: var(--accent-color);
+	color: var(--font-color);
+	border: none;
+	padding-inline: 1.25em;
+}
+
+/*Mobile first approach*/
+
+.primary-header {
+	/* margin-block: 3em; */
+	background-color: var(--primary-color);
+	/* margin-inline: clamp(3em, 7vw, 10vw); */
+	text-align: center;
+}
+
+.container--header {
+	padding: 3rem;
+}
+
+.main--header {
+	font-weight: var(--regular);
+	font-size: 3em;
+	color: var(--font-color);
+	line-height: 1.1;
+}
+
+.highlight {
+	color: #000;
+}
+
+.header-image {
+	border-radius: 5px;
+	perspective: 1rem;
+	box-shadow: 1em 1em 1.5em rgb(0, 0, 0, 0.6);
+}
+
+main {
+	display: grid;
+	place-items: center;
+
+	/* margin-block: 3em;
+	margin-inline: clamp(3em, 7vw, 10vw);
+	display: grid;
+	place-items: center; */
+}
+
+.main-showcase,
+.events {
+	text-align: left;
+}
+
+.showcase,
+.newsletter,
+.events-container {
+	margin-block: 1.4rem;
+	font-size: 16px;
+	width: auto;
+	max-width: 80vw;
+}
+
+.container > h2 {
+	font-weight: var(--thick);
+	text-align: center;
+}
+
+.container > p {
+	font-size: calc(1.1em * 100%);
+}
+
+.events {
+	display: grid;
+	place-items: center;
+	text-align: center;
+	width: 100vw;
+}
+
+.event > img {
+	border-radius: 5px;
+}
+
+/* .event-3 {
+	/* width: 300px;
+	height: 200px; 
+	margin: auto;
+}*/
+
+footer {
+	min-height: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary-color);
+	color: var(--font-color);
+}
+
+/*Media queries to make it responsive.*/
+@media screen and (min-width: 48em) {
+	.container--header {
+		display: grid;
+		place-items: center;
+	}
+	.main--header {
+		margin-block-end: 2rem;
+	}
+
+	.main-showcase {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.showcase {
+		margin-inline-start: 1em;
+		padding: 2em;
+	}
+
+	.event > h2 {
+		margin-block-start: 1em;
+		font-weight: var(--regular);
+	}
+	.event > p {
+		text-align: left;
+		margin-block-end: 1.5em;
+	}
 }
